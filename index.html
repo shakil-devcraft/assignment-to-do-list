@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo_container">
+        <h1 class="text-3xl font-bold text-center mb-4">To-do List</h1>
+        <p id="task_info" class="text-center text-gray-600 mb-6">0 Total, 0 Completed, 0 Pending</p>
+
+        <!-- input todo items -->
+        <div class="flex mb-4">
+            <input id="task_input" type="text" name="" class="flex-grow p-2 border rounded-l" placeholder="Add your task ...">
+            <button id="add_btn" class="bg-blue-500 text-white px-4 py-2 rounded-r">Add Task</button>
+        </div>
+
+        <!-- task showcase table -->
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr>
+                    <th class="border-b p-2">Num</th>
+                    <th class="border-b p-2">Task</th>
+                    <th class="border-b p-2">Date</th>
+                    <th class="border-b p-2">Status</th>
+                    <th class="border-b p-2">Delete</th>
+                </tr>
+            </thead>
+
+            <!-- table body todo list -->
+            <tbody id="todo_list">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- js -->
+    <script src="index.js"></script>
+</body>
+</html>

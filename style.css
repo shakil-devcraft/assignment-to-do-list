@@ -1,0 +1,13 @@
+body {
+    background-color: #f7fafc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo_container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
